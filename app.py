@@ -42,7 +42,7 @@ if model:
 
     if uploaded_file is not None:
         # Display uploaded image
-        st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
+        st.image(uploaded_file, caption="Uploaded Image", use_container_width=True)
         st.write("")
         st.write("Detecting objects...")
 
@@ -64,7 +64,7 @@ if model:
             # Convert BGR to RGB for Streamlit display
             annotated_image_rgb = cv2.cvtColor(annotated_image_bgr, cv2.COLOR_BGR2RGB)
 
-            st.image(annotated_image_rgb, caption="Detected Objects", use_column_width=True)
+            st.image(annotated_image_rgb, caption="Detected Objects", use_container_width=True)
 
             # Display detection details (optional)
             if results[0].boxes:
