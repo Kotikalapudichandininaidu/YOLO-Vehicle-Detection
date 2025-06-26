@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # --- Title and Description ---
-st.title("Object Detection with YOLO")
+st.title("Vehicle Detection with YOLO")
 st.write("Upload an image and let the model detect objects!")
 
 # --- Model Loading ---
